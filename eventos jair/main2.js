@@ -1,4 +1,4 @@
-// calculadora de masa corporal IMC = peso / altura * altura.
+// calculadora de masa corporal
 let boton = document.getElementById("calcular");
 
 boton.addEventListener("click", (a) => {
@@ -10,7 +10,6 @@ boton.addEventListener("click", (a) => {
   console.log(resultado.value);
 });
 
-//Ejercicio 4
 let dolarAPeso = document.getElementById("dolar");
 let pesoADolar = document.getElementById("pesos");
 

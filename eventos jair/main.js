@@ -1,5 +1,3 @@
-// EJERCICIO 3 //
-
 const formulario = document.getElementById("formulario-js");
 const inputTitulo = document.getElementById("titulo-nueva-nota");
 const textArea = document.getElementById("descripcion-nueva-nota");
@@ -77,7 +75,7 @@ contenedorNotas.addEventListener("click", (e) => {
   }
 });
 
-// evento al input de busqueda
+// evento de busqueda
 inputBusqueda.addEventListener("input", () => {
   const filtrarPorBusqueda = filtrarPorTitulo(notas, inputBusqueda.value);
   if (checkbox.checked) {
@@ -88,7 +86,7 @@ inputBusqueda.addEventListener("input", () => {
   }
 });
 
-// evento al checkbox
+// evento de checkbox
 checkbox.addEventListener("change", () => {
   const filtrarPorBusqueda = filtrarPorTitulo(notas, inputBusqueda.value);
   if (checkbox.checked) {
@@ -99,11 +97,11 @@ checkbox.addEventListener("change", () => {
   }
 });
 
-// funcion para filtrar por realizadas
+// funcion para filtrar echas
 function filtrarPorRealizadas(notas) {
   return notas.filter((nota) => nota.realizada);
 }
-// funcion para filtrar por titulo
+// funcion para filtrar por titulos
 function filtrarPorTitulo(notas, busqueda) {
   return notas.filter((nota) =>
     nota.titulo.toLowerCase().includes(busqueda.toLowerCase())
